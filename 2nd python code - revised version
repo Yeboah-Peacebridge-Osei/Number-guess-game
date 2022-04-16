@@ -1,0 +1,13 @@
+import random
+
+num = random.randint(1, 10)
+guess = None
+
+while guess != num:
+    guess = int(input("guess a number between 1 and 10: "))
+
+    if guess == num:
+        print("Yeah, you made it buy don't be happy..it was just a guess!")
+        break
+    else:
+        print("You guessed it wrong..I'm sorry bro!")
